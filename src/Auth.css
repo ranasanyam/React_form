@@ -1,0 +1,43 @@
+.auth {
+    background-color: #f8f8f8;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+
+}
+.auth__container {
+    padding: 100px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.5);
+}
+.auth__body {
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    padding: 10px;
+}
+.auth__otpContainer {
+    padding: 20px;
+    margin-left: 38px !important;
+    margin: 10px;
+}
+.auth__button {
+    margin: 10px !important;
+    padding: 10px 30px !important;
+    border-radius: 5px;
+    font-size: medium !important;
+    color: white !important;
+    text-transform: inherit !important;
+    background-color: #0a8d48 !important; 
+}
+
+.auth__error {
+    margin-top: 10px;
+    color: red;
+    font-size: 18;
+    margin-right: 25px;
+    text-align: center;
+}

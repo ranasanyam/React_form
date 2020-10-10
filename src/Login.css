@@ -1,0 +1,31 @@
+.login {
+    background-color: #f8f8f8;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+.login__container {
+    padding: 100px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.5);
+}
+.login__component {
+    margin: 20px 0;
+}
+.login__button {
+    margin-top: 20px !important;
+    padding: 9px 35px !important;
+    border-radius: 5px;
+    width: 80% !important;
+    text-transform: inherit !important;
+    background-color: #0a8d48 !important;
+    color: white !important;
+    font-size: medium !important;
+}
+.error{
+    font-size: 18px;
+    color: 'red';
+}

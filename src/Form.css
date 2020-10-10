@@ -1,0 +1,30 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+    width: 37vw; 
+    height: 90vh;
+    text-align: center;
+    background-color: #ededed;
+    box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.5);
+}
+.component {
+    margin: 10px;
+}
+.error {
+    font-size: 18;
+    color: red;
+}
+.form__button {
+    margin-top: 20px !important;
+    padding: 9px 35px !important;
+    border-radius: 5px;
+    width: 100% !important;
+    text-transform: inherit !important;
+    background-color: #0a8d48 !important;
+    color: white !important;
+    font-size: medium !important;
+}
