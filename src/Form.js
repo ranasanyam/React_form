@@ -44,7 +44,7 @@ function Form() {
     
         console.log(formData);
         
-        /*
+        
         if (error === '') {
           fetch('http://madebygorilla.com/api/v01/visitor/', {
             method: 'POST', // or 'PUT'
@@ -65,7 +65,7 @@ function Form() {
           console.error('Error:', error);
           });
         } 
-        */
+        
         
         setFormData({
           name: '',
