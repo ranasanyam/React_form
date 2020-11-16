@@ -37,7 +37,7 @@ function Auth() {
                    </div>       
                   ) : (
                     <div className="auth__body">
-                        <h1 className="auth__text">Enter Your OTP</h1>
+                        <h1 className="auth__text">Enter OTP</h1>
                         <div  className="auth__otpContainer" >
                           <OtpInput
                             value={otp}

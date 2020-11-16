@@ -41,3 +41,33 @@
     margin-right: 25px;
     text-align: center;
 }
+@media only screen and (max-width: 400px) {
+    .auth__container {
+        padding: 50px;
+    }
+    .auth__body {
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+        padding: 10px;
+    }
+    .auth__otpContainer {
+        padding-left: 2px!important;
+        margin-left: 15px !important;
+        margin-top: 1px;
+    }
+    .auth__error {
+        padding-left: 15px !important;
+    }
+    .auth__button {
+        margin: 10px !important;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .auth__otpContainer {
+        padding-left: 4px!important;
+        margin-left: 15px !important;
+        margin-top: 1px;
+    }
+
+}

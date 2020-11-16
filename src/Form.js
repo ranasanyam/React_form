@@ -18,9 +18,7 @@ function Form() {
 
     const classes = useStyles();
 
-    const [error, setError] = useState({
-        mobileError: ''
-    });
+    const [error, setError] = useState('');
     const [formData, setFormData] = useState({
         name: '',
         mobile: '',
@@ -35,32 +33,29 @@ function Form() {
           ...formData,
           [event.target.name]: event.target.value
         });
-        setError({
-          mobileError: ''
-        });
+        setError('');
       }
       const inputHandler = (e) => {
         e.preventDefault();
         if(formData.mobile.length !== 10) {
-          setError({
-            ...error,
-            mobileError: 'Please enter a valid mobile no'
-          });
+          setError('Please enter a valid mobile no.');
         }
 
     
         console.log(formData);
-
-        if(error.mobileError === '') {
+        
+        /*
+        if (error === '') {
           fetch('http://madebygorilla.com/api/v01/visitor/', {
-          method: 'POST', // or 'PUT'
-          headers: {
-           'Content-Type': 'application/json',
-           'Access-Control-Allow-Origin': '*',
-           'Access-Control-Allow-Headers': 'Origin',
-           'Authorization':'token 9a39cc8d17dfc5eae96bad00c45859b208796615'
-          },
-          body: JSON.stringify(formData),
+            method: 'POST', // or 'PUT'
+            headers: {
+             'Content-Type': 'application/json',
+             'Access-Control-Allow-Origin': '*',
+             'Access-Control-Allow-Headers': 'Origin',
+             'Access-Control-Allow-Credentials': 'true',
+             'Authorization':'token 9a39cc8d17dfc5eae96bad00c45859b208796615'
+            },
+            body: JSON.stringify(formData),
           })
           .then(response => response.json())
           .then(data => {
@@ -69,7 +64,9 @@ function Form() {
           .catch((error) => {
           console.error('Error:', error);
           });
-        }
+        } 
+        */
+        
         setFormData({
           name: '',
           mobile: '',
@@ -86,24 +83,19 @@ function Form() {
           ...formData,
           [name]: value
         });
-        setError({
-          mobileError: ''
-        });
+        setError('');
     }
 
     return (
         <div className="form">
           <div>
             <form className={classes.root} onSubmit={inputHandler}>
-            <div className="component textfield">
-              
-             
+            <div className="component textfield">            
               <TextField id="standard-basic" type="text" label="Your Name...." required className="text" value={formData.name} onChange={changeHandler} name="name" />
             </div>
             <div className="component textfield">
-              <TextField id="standard-basic" type="number" fullWidth label="Your Mobile No...." required className="text" value={formData.mobile} onChange={changeHandler} name="mobile" />
-             
-              <p className="error">{error.mobileError}</p>
+              <TextField id="standard-basic" type="number" fullWidth label="Your Mobile No...." required className="text" value={formData.mobile} onChange={changeHandler} name="mobile" />            
+              <p className="error">{error}</p>
             </div>
             <div className="component">
             <FormControl component="fieldset" >
@@ -120,13 +112,11 @@ function Form() {
             <FormControl component="fieldset" >
               <FormLabel component="legend" style={{ fontSize: 20, fontWeight: 'bold'}}>Purpose</FormLabel>
               <RadioGroup aria-label="purpose" name="purpose">
-                <div>
-                
+                <div>               
                 <FormControlLabel  control={<Radio color="primary" />}  value="Meeting" checked={formData.purpose==="Meeting"} name="purpose" onChange={handleChange} label="Meeting" />
                 <FormControlLabel  control={<Radio color="primary" />}  value="Personal" checked={formData.purpose==="Personal"} name="purpose" onChange={handleChange} label="Personal" />
                 <FormControlLabel  control={<Radio color="primary" />}  value="Office" checked={formData.purpose==="Office"} name="purpose" onChange={handleChange} label="Office" />
                 </div>
-
               </RadioGroup>
             </FormControl>
             </div>
@@ -142,7 +132,6 @@ function Form() {
                 </RadioGroup>
             </FormControl>
             </div>
-
             <div className="component">
             <FormControl component="fieldset">
               <FormLabel component="legend" style={{ fontSize: 20, fontWeight: 'bold'}}>Location</FormLabel>
@@ -158,7 +147,6 @@ function Form() {
               <Button type="submit" className='form__button' >Submit</Button>
             </div>
           </form>
-
           </div>
         </div>
     )

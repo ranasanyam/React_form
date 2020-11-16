@@ -28,3 +28,102 @@
     color: white !important;
     font-size: medium !important;
 }
+@media only screen and ( min-height: 500px ) {
+    .form {
+        width: 90vw;
+        height: 95vh;
+        margin-top: 2px !important;
+        margin-bottom: 2px !important;
+    }
+    .component {
+        margin: 0px !important;
+    }
+    .form__button {
+        width: 80% !important;
+        margin-top: 0 !important;
+        padding: 5px 15px !important;
+    }
+}
+@media only screen and ( min-width: 300px ) {
+    .form {
+        width: 65vw !important;
+        margin-top: 5px !important;
+        height: 100vh !important;
+        padding-bottom: 20px !important;
+        margin-bottom: 2px !important;
+    }
+    .form__button {
+        margin-top: 0px !important;
+    }
+}
+@media only screen and ( max-width: 300px ) {
+    .form {
+        width: 100% !important;
+        margin-top: 0px !important;
+        height: 100vh !important;
+        padding-bottom: 20px !important;
+        margin-bottom: 0px !important;
+    }
+    .form__button {
+        margin-top: 0px !important;
+    }
+}
+@media only screen and ( max-height: 300px ) {
+    .form {
+        width: 90vw !important;
+        margin-top: 0px !important;
+        height: 100% !important;
+        padding-bottom: 20px !important;
+        margin-bottom: 0px !important;
+    }
+    .form__button {
+        margin-top: 0px !important;
+    }
+}
+@media only screen and ( min-width: 700px ) {
+    .form {
+        margin-top: 3px !important;
+        height: 100vh !important;
+        width: 50vw !important;
+        padding-bottom: 20px !important;
+        margin-bottom: 2px !important;
+    }
+    .form__button {
+        margin-top: 2px !important;
+    }
+}
+
+@media only screen and ( min-height: 700px ) {
+    .form {
+        width: 90vw;
+        height: 85vh;
+        margin-top: 2px;
+        margin-bottom: 2px !important;
+    }
+    .component {
+        margin: 5px !important;
+    }
+    .form__button {
+        width: 80% !important;
+        margin-top: 3px !important;
+        padding: 5px 15px !important;
+    }
+}
+@media only screen and ( min-height: 1024px ) {
+    .form {
+        width: 45vw !important;
+        height: 90vh !important;
+        margin-top: 2px !important;
+        margin-bottom: 2px !important;
+    }
+    .component {
+        margin: 5px !important;
+    }
+    .form__button {
+        width: 80% !important;
+        margin-top: 1px !important;
+        padding: 5px 15px !important;
+        margin-bottom: 2px !important;
+    }
+}
+

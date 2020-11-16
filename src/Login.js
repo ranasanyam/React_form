@@ -39,7 +39,7 @@ function Login() {
                   <div>
                     <h1 className="login__text">Login With Mobile</h1>
                       <div className="login__component">
-                        <TextField style={{ marginBottom: 12,  width: '80%', marginTop: 10}} id="standard-basic" type="number" fullWidth label="Enter Your Mobile No...." required className="text"   name="mobile" value={value} onChange={(e) => setValue(e.target.value)} />
+                        <TextField style={{ marginBottom: 12,  width: '80%', marginTop: 10}} id="standard-basic" type="number" fullWidth label="Enter Mobile No...." required className="text"   name="mobile" value={value} onChange={(e) => setValue(e.target.value)} />
           
                         <p className="error">{error}</p>
                         <Button className="login__button" onClick={loginHandler}>Login</Button>
